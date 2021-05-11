@@ -1,0 +1,137 @@
+body {
+  background: var(--primaryDarkBlue);
+  font-family: var(--primaryFont);
+}
+#root {
+  position: relative;
+  width: min(900px, 100%);
+  min-height: 100vh;
+  padding: 3rem 1rem 5rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heading {
+  position: absolute;
+  top: 2rem;
+  left: 1rem;
+  text-align: center;
+  font-size: clamp(2rem, 3rem, 3vw);
+  color: var(--primaryWhite);
+}
+.par__description {
+  width: min(400px, 100%);
+  margin: 0 0 2rem 0;
+  font-size: clamp(1.1rem, 1.3rem, 1.3vw);
+  color: var(--primaryWhite);
+  text-align: center;
+  letter-spacing: 0.03rem;
+}
+.btns-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.btns-container > * {
+  margin: 0.5rem;
+}
+.btn {
+  font-family: var(--primaryFont);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  padding: 12px;
+  width: 150px;
+  background: var(--primaryTurquoise);
+  color: var(--primaryWhite);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn__add {
+  background: var(--primaryRed);
+}
+.btn__toMain {
+  background: var(--primaryDarkBlue);
+  margin-top: auto;
+}
+.btn__submit {
+  margin: 2rem 0 0 0;
+}
+.btn:hover {
+  transform: translateY(3px);
+}
+.btn:active {
+  box-shadow: 0 3px 10px 1px var(--primaryYellow);
+}
+.quiz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.backToMain {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-weight: 700;
+  color: var(--primaryYellow);
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.backToMain:hover {
+  color: var(--primaryOrange);
+}
+.quiz__item {
+  width: min(600px, 100%);
+  background: var(--primaryGrey);
+  border-radius: 1.2rem;
+  margin: 0.5rem;
+  padding: 1.5rem 2rem;
+}
+.quiz__item > * {
+  color: var(--darkGrey);
+}
+.question {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+input[type="checkbox"] {
+  margin: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+.layer {
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem 1rem 5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--primaryRed);
+  z-index: 10;
+}
+.layer__success {
+  background: var(--primaryTurquoise);
+}
+.layer > * {
+  color: var(--primaryWhite);
+}
+.layer__status {
+  font-size: 1.7rem;
+  margin: 2rem 0;
+}
+.mistakes__subTitle {
+  margin: 2rem 0;
+}
+.mistake {
+  margin: 0 0 1rem 0;
+}
