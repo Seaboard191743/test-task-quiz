@@ -13,7 +13,6 @@ import { statusMessages } from "./js/constants/constants";
 
 import "./css/style.css";
 import "../assets/icons/favicon.png";
-
 const { status_cc4 } = statusMessages;
 
 const calculateResult = (answers) => {
