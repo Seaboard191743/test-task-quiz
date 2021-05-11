@@ -35,13 +35,13 @@ module.exports = {
       {
         test: /\.(eot|svg|ttf|woff|woff2)$/,
         use: {
-          loader: "file-loader?name=./assets/fonts/[name].[ext]",
+          loader: "file-loader?name=./assets/[name].[ext]",
         },
       },
       {
         test: /\.png|svg|jpg|mp4|gif$/,
         use: {
-          loader: "file-loader?name=./assets/icons/[name].[ext]",
+          loader: "file-loader?name=./assets/[name].[ext]",
         },
       },
     ],

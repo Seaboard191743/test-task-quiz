@@ -2,13 +2,13 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../../assets/fonts/PTSans-Regular.ttf") format("trueType");
+  src: url("../../assets/PTSans-Regular.ttf") format("trueType");
 }
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../../assets/fonts/PTSans-Bold.ttf") format("trueType");
+  src: url("../../assets/PTSans-Bold.ttf") format("trueType");
 }
 
 *,
