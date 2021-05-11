@@ -35,11 +35,11 @@ module.exports = {
       {
         test: /\.png|svg|jpg|mp4|gif$/,
         use: {
-          loader: "file-loader?name=./assets/icons/favicon.png",
+          loader: "file-loader?name=./assets/icons/[name].[ext]",
         },
       },
       {
-        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        test: /\.(eot|png|svg|ttf|woff|woff2)$/,
         use: {
           loader: "file-loader?name=./assets/fonts/[name].[ext]",
         },
