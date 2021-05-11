@@ -12,7 +12,7 @@ import { dataObj } from "./js/constants/constants";
 import { statusMessages } from "./js/constants/constants";
 
 import "./css/style.css";
-import "../assets/icons";
+import "../assets/icons/favicon.png";
 
 const { status_cc4 } = statusMessages;
 
