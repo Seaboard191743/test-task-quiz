@@ -34,7 +34,9 @@ module.exports = {
       },
       {
         test: /\.png|svg|jpg|mp4|gif$/,
-        use: ["file-loader"],
+        use: {
+          loader: "file-loader?name=./assets/icons/favicon.png",
+        },
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2)$/,
