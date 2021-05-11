@@ -32,11 +32,10 @@ export const showFinalModal = (result) => {
   root.innerHTML = "";
   const { layer, status, mistakesList, backToStart } = createModal(result);
   layer.appendChild(status);
-  if (result.mistakes.length > 0) {
-    layer.insertAdjacentHTML("beforeend", mistakesList);
-  } else {
-    layer.classList.add("layer__success");
-  }
+  result.mistakes.length > 0
+    ? layer.insertAdjacentHTML("beforeend", mistakesList)
+    : layer.classList.add("layer__success");
+
   layer.appendChild(backToStart);
   document.body.appendChild(layer);
   backToStart.addEventListener("click", () => {

@@ -13,6 +13,7 @@ import { statusMessages } from "./js/constants/constants";
 
 import "./css/style.css";
 import "../assets/favicon.png";
+
 const { status_cc4 } = statusMessages;
 
 const calculateResult = (answers) => {
@@ -56,7 +57,10 @@ const handleClick = (e) => {
   }
   if (target.matches(".btn__add")) {
     let { questionBlock, questionArr } = dataObj;
+
+    //Use Pipe helper
     const doPipe = pipe(createQuestion, createAnswers, createCorrectAnswers);
+
     const question = doPipe(questionBlock);
     question ? questionArr.push(question) : null;
     localStorage.setItem("questionList", JSON.stringify(questionArr));

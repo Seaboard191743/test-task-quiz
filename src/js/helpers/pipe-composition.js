@@ -1,3 +1,4 @@
+//Pipe functional composition helper
 export const pipe =
   (...fns) =>
   (arg) => {

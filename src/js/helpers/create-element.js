@@ -1,3 +1,4 @@
+//Create DOM Element helper
 export const createElement = ({ tagName, className = [], attributes = {} }) => {
   const element = document.createElement(tagName);
   if (className.length > 0) {
