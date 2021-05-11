@@ -2,6 +2,10 @@
 
 ---
 
-##### npm start
+##### npm run start
 
-##### npm build
+##### npm run build
+
+---
+
+#### Deploy: https://test-task-quiz.netlify.app/
