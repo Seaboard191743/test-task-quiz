@@ -12,11 +12,13 @@ export const createCorrectAnswers = (obj) => {
     alert(status_cc3);
     return;
   }
-  const reg = /^([1]?)((,?)[2]?)((,?)[3]?)(,:?[4]?)*$/;
-
-  answer = answer.trim().split(",").join();
-  const regTrigger = answer.match(reg) && !answer.endsWith(",");
-  if (!regTrigger) {
+  const reg = /^[1-4](,[1-4])*$/;
+  const answerArr = answer.trim().split(",");
+  const answerUniqueVal = [...new Set(answerArr)];
+  answer = answerArr.sort((a, b) => a - b).join();
+  const uniqueTrigger = answerArr.length === answerUniqueVal.length;
+  const regTrigger = answer.match(reg);
+  if (!regTrigger || !uniqueTrigger) {
     alert(status_cc6);
     return;
   }
