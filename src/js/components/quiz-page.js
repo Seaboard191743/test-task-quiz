@@ -3,6 +3,7 @@ import { createElement } from "../helpers/create-element";
 import { createButtons } from "./buttons";
 import { createStartPage } from "./start-page";
 
+// Create question/answers block
 const createQuizItem = (quizContainer) => {
   const questions = getQuestionArr();
   questions.forEach((item) => {

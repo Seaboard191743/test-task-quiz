@@ -6,10 +6,9 @@ const createModal = ({ questionCount, count, mistakes }) => {
   const { backToStart } = createButtons();
   const layer = createElement({ tagName: "div", className: ["layer"] });
   const status = createElement({ tagName: "h2", className: ["layer__status"] });
-  status.innerText =
-    mistakes.length > 0
-      ? "Вы неправильно ответили на вопросы:"
-      : `Ваш результат: ${count} из ${questionCount}. Вы молодец!`;
+  status.innerText = mistakes.length
+    ? "Вы неправильно ответили на вопросы:"
+    : `Ваш результат: ${count} из ${questionCount}. Вы молодец!`;
   const mistakesList = `
       <div class = "mistakes">
         ${mistakes
@@ -32,7 +31,7 @@ export const showFinalModal = (result) => {
   root.innerHTML = "";
   const { layer, status, mistakesList, backToStart } = createModal(result);
   layer.appendChild(status);
-  result.mistakes.length > 0
+  result.mistakes.length
     ? layer.insertAdjacentHTML("beforeend", mistakesList)
     : layer.classList.add("layer__success");
 
