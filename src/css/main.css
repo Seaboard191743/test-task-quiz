@@ -132,6 +132,10 @@ input[type="checkbox"] {
 .mistakes__subTitle {
   margin: 2rem 0;
 }
+.mistakes,
+.layer__status {
+  width: min(500px, 100%);
+}
 .mistake {
   margin: 0 0 1rem 0;
 }
